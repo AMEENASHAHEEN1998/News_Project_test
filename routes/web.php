@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,9 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Route::view('/','site.home')->name('/');
+
 Route::view('home','site.home');
-Route::view('/admin','dashboard.home');
+// Route::view('/admin','dashboard.home');
 // Route::get();
+
+Auth::routes();
+
+Route::get('/admin' , [HomeController::class , 'index'] )->name('name')->middleware('admin');
