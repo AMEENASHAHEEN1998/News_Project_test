@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -23,4 +24,6 @@ Route::view('home','site.home');
 
 Auth::routes();
 
+Route::resource('categories' , CategoryController::class);
 Route::get('/admin' , [HomeController::class , 'index'] )->name('name')->middleware('admin');
+

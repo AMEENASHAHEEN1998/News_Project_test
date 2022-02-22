@@ -49,3 +49,6 @@
     <script src="{{ asset('dashboard/assets/layouts/layout/scripts/demo.min.js') }}" type="text/javascript"></script>
     <script src="{{ asset('dashboard/assets/layouts/global/scripts/quick-sidebar.min.js') }}" type="text/javascript"></script>
     <!-- END THEME LAYOUT SCRIPTS -->
+    @jquery
+    @toastr_js
+    @toastr_render
