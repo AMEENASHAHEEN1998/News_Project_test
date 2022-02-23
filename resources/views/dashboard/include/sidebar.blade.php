@@ -67,14 +67,34 @@
                     <span class="arrow"></span>
                 </a>
                 <ul class="sub-menu">
-                    <li class="nav-item  "> 
+                    <li class="nav-item  ">
                         <a href="{{ route('categories.create') }}" class="nav-link ">
                             <span class="title">اضافة قسم جديد </span>
                         </a>
                     </li>
                     <li class="nav-item  ">
-                        <a href="" class="nav-link ">
+                        <a href="{{ route('categories.index')}}" class="nav-link ">
                             <span class="title">عرض الأقسام </span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav-item  ">
+                <a href="javascript:;" class="nav-link nav-toggle">
+                    <i class="icon-diamond"></i>
+                    <span class="title"> الأخبار</span>
+                    <span class="arrow"></span>
+                </a>
+                <ul class="sub-menu">
+                    <li class="nav-item  ">
+                        <a href="{{ route('blogs.create') }}" class="nav-link ">
+                            <span class="title">اضافة خبر جديد </span>
+                        </a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a href="{{ route('blogs.index')}}" class="nav-link ">
+                            <span class="title">عرض الأخبار </span>
                         </a>
                     </li>
                 </ul>

@@ -1,8 +1,9 @@
 <?php
 
-use App\Http\Controllers\CategoryController;
-use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BlogController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,5 +26,7 @@ Route::view('home','site.home');
 Auth::routes();
 
 Route::resource('categories' , CategoryController::class);
+Route::resource('blogs' , BlogController::class);
+
 Route::get('/admin' , [HomeController::class , 'index'] )->name('name')->middleware('admin');
 
