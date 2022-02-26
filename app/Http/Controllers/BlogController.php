@@ -15,7 +15,8 @@ class BlogController extends Controller
      */
     public function index()
     {
-        //
+        $blogs = Blog::orderBy('id' , 'desc')->get();
+        return view('dashboard.blogs.index' , compact('blogs'));
     }
 
     /**
@@ -78,6 +79,7 @@ class BlogController extends Controller
                 $request->image->move(public_path('Attachments/'), $imageName);
             }
             toastr()->success('تم اضافة الخبر بنجاح');
+            return redirect()->back();
         }
         // dd($request->all());
         else{
@@ -107,7 +109,9 @@ class BlogController extends Controller
      */
     public function edit($id)
     {
-        //
+        $blog = Blog::findOrFail($id);
+        $categories = Category::all();
+        return view('dashboard.blogs.edit' , compact('blog' , 'categories'));
     }
 
     /**
@@ -119,7 +123,52 @@ class BlogController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $blog = Blog::findOrFail($id);
+        $validator = validator($request->all(),[
+            'title' => 'required|max:255',
+            'short_description'=>'required',
+            'long_description'=>'required',
+
+        ],[
+            'title.required' => 'عنوان الخبر مطلوب',
+            'short_description.required' => 'الوصف الختصر مطلوب',
+            'long_description.required' => 'المحتوى مطلوب',
+
+
+        ]);
+        if (!$validator->fails()) {
+            if ($request->hasFile('image')){
+                $image = $request->file('image');
+                $file_name = $image->getClientOriginalName();
+                $blog->update([
+                    'image' => $file_name,
+                ]);
+            }else{
+                $file_name = '';
+            }
+
+            $blog->update([
+                'title' => $request->title,
+                'short_description' => $request->short_description,
+                'long_description' => $request->long_description,
+                'category_id' => $request->category_id ?? $blog->category_id,
+            ]);
+            $blog->save();
+            if($file_name !== ''){
+                // move pic
+                $imageName = $request->image->getClientOriginalName();
+                $request->image->move(public_path('Attachments/'), $imageName);
+            }
+            toastr()->success('تم تعديل الخبر بنجاح');
+            return redirect()->back();
+        }
+        // dd($request->all());
+        else{
+            toastr()->error($validator->getMessageBag()->first());
+            return redirect()->back()
+                            ->withErrors($validator)
+                            ->withInput();
+        }
     }
 
     /**
@@ -130,6 +179,9 @@ class BlogController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $blog = Blog::findOrFail($id);
+        $blog->delete();
+        toastr()->success('تم حذف الخبر بنجاح');
+        return redirect()->back();
     }
 }

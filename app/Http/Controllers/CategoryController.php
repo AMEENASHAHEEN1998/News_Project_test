@@ -52,6 +52,7 @@ class CategoryController extends Controller
             ]);
             $category->save();
             toastr()->success('تم اضافة القسم بنجاح');
+            return redirect()->back();
         }
         // dd($request->all());
 
@@ -103,6 +104,9 @@ class CategoryController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $category = Category::findOrFail($id);
+        $category->delete();
+        toastr()->success('تم حذف القسم بنجاح');
+        return redirect()->back();
     }
 }

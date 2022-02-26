@@ -8,7 +8,7 @@
         <div class="portlet box green">
             <div class="portlet-title">
                 <div class="caption">
-                    <i class="fa fa-gift"></i>اضافة خبر جديد</div>
+                    <i class="fa fa-gift"></i>تعديل الخبر</div>
                 
             </div>
             <div class="portlet-body form">
@@ -22,13 +22,14 @@
                     </div>
                 @endif
                 <!-- BEGIN FORM-->
-                <form action="{{ route('blogs.store') }}" method="POST" class="form-horizontal" enctype="multipart/form-data">
+                <form action="{{ route('blogs.update' , $blog->id) }}" method="POST" class="form-horizontal" enctype="multipart/form-data">
                     @csrf
+                    @method('put')
                     <div class="form-body">
                         <div class="form-group">
                             <label class="col-md-3 control-label">عنوان الخبر</label>
                             <div class="col-md-4">
-                                <input type="text" name="title" value="{{ old('title') }}" class="form-control input-circle" placeholder="">
+                                <input type="text" name="title" value="{{ old('title') ?? $blog->title }}" class="form-control input-circle" placeholder="">
                                 {{-- <span class="help-block"> A block of help text. </span> --}}
                             </div>
                         </div>
@@ -39,7 +40,7 @@
 
                                     <option value="">اختر القسم</option>
                                     @foreach ($categories as $category)
-                                    <option value="{{ $category->id }}" @if (old('category_id') ==  $category->id ) selected @endif> {{ $category->name }}</option>
+                                    <option value="{{ $category->id }}" @if (old('category_id') ==  $category->id || $blog->category_id == $category->id) selected @endif> {{ $category->name }}</option>
 
                                     @endforeach
                                 </select>
@@ -48,14 +49,19 @@
                         <div class="form-group">
                             <label class="col-md-3 control-label"> وصف مختصر</label>
                             <div class="col-md-4">
-                                <input type="text" name="short_description" value="{{ old('short_description') }}" class="form-control input-circle" placeholder="">
+                                <input type="text" name="short_description" value="{{ old('short_description') ?? $blog->short_description }}" class="form-control input-circle" placeholder="">
                                 {{-- <span class="help-block"> A block of help text. </span> --}}
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-md-3 control-label"> المحتوى</label>
                             <div class="col-md-4">
-                                <textarea rows="4" name="long_description" class="form-control input-circle">{{ old('long_description') }}</textarea>
+                                <textarea rows="4" name="long_description" class="form-control input-circle">{{ old('long_description') ?? $blog->long_description}}</textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-4">
+                                <img src="{{ asset('Attachments/'.$blog->image)  }}" style="width: 200px;height:200px;margin-right:50%" alt="">
                             </div>
                         </div>
                         <div class="form-group">

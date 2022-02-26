@@ -9,12 +9,7 @@
             <div class="portlet-title">
                 <div class="caption">
                     <i class="fa fa-gift"></i>اضافة قسم جديد</div>
-                <div class="tools">
-                    <a href="javascript:;" class="collapse" data-original-title="" title=""> </a>
-                    <a href="#portlet-config" data-toggle="modal" class="config" data-original-title="" title=""> </a>
-                    <a href="javascript:;" class="reload" data-original-title="" title=""> </a>
-                    <a href="javascript:;" class="remove" data-original-title="" title=""> </a>
-                </div>
+                
             </div>
             <div class="portlet-body form">
                 @if ($errors->any())
@@ -33,7 +28,7 @@
                         <div class="form-group">
                             <label class="col-md-3 control-label">اسم القسم</label>
                             <div class="col-md-4">
-                                <input type="text" name="name" class="form-control input-circle" placeholder="Enter text">
+                                <input type="text" name="name" class="form-control input-circle" placeholder="">
                                 {{-- <span class="help-block"> A block of help text. </span> --}}
                             </div>
                         </div>
