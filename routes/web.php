@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\SiteController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,9 +18,13 @@ use App\Http\Controllers\CategoryController;
 */
 
 
-Route::view('/','site.home')->name('/');
 
-Route::view('home','site.home');
+Route::get('/' , [SiteController::class , 'home'])->name('home');
+Route::get('home' , [SiteController::class , 'home'])->name('home');
+Route::get('aboutas' , [SiteController::class , 'aboutas'])->name('aboutas');
+Route::get('newsCategory' , [SiteController::class , 'newsCategory'])->name('newsCategory');
+Route::get('blog' , [SiteController::class , 'blog'])->name('blog');
+
 // Route::view('/admin','dashboard.home');
 // Route::get();
 

@@ -105,6 +105,8 @@ class CategoryController extends Controller
     public function destroy($id)
     {
         $category = Category::findOrFail($id);
+        // $category = Category::where('id' , $id)->get();
+
         $category->delete();
         toastr()->success('تم حذف القسم بنجاح');
         return redirect()->back();

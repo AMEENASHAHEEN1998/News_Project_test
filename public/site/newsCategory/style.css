@@ -1,0 +1,271 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .logo{    margin-left: 2rem;
+}
+  body {   
+    font-family: sans-serif;
+  }
+  
+  header{
+      background: transparent;
+  }
+
+
+    nav {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    img{
+      
+        width: 150px;
+    }
+
+    .toggle{
+        display: none;
+    }
+
+  .menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+	      background: transparent;
+    }
+	.menu1 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+	  margin-left:3rem;
+    }
+    .login{
+        display: flex;
+        float: right;
+        list-style: none;
+        justify-content: space-between;
+        width: 160px;
+		    background: transparent;
+
+    }
+    .menu li a{
+        color:white;
+        font-weight: 1000;
+        text-decoration: none;
+    }
+	.menu li{
+		margin:0.5rem;
+    }
+
+    .login li a{
+        color:white;
+        font-weight: 1000;
+        text-decoration: none;
+    }
+.input1
+	{
+		width:90%;
+	}
+@media all and (max-width:850px){
+	.footer{
+		width:50%;
+	}
+	
+.Subscribe0
+{
+	padding-right:1rem;
+}
+
+
+	.Subscribe1
+	{
+		font-size:1rem;
+	}
+	
+	.fa {
+    color: white;
+}
+.login {
+    margin: 1rem 3rem;
+	
+}
+nav {
+    justify-content: center;
+    align-items: center;
+}
+
+.menu1 {
+ margin-left: 0.5rem;
+}
+#img1{
+	width:5rem;
+margin-right:1rem;
+}
+    .toggle{
+    display: block;
+        font-size: 2rem;
+        cursor: pointer;
+        position: relative;
+        z-index: 4;
+    }
+   .menu{
+        z-index: 2;
+    }
+  .toggle .ouvrir{
+      display: block;
+  }
+   .toggle .fermer{
+    display: none;
+    }
+
+    .open .ouvrir{
+        display: none;
+    }
+    .open .fermer{
+        display: block;
+    }
+
+    .menu{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color:rgb(238,69,66);
+        flex-direction: column;
+        padding: 2rem;
+        justify-content: space-around;
+        transform: translateX(-100%);
+        transition: transform 1s;  
+    }
+    .menu li a{
+        font-size: 2rem;
+    }
+    
+    .open .menu{
+        transform: translateX(0);
+    }
+}
+
+.intro{
+    margin-top: 5rem;
+
+}
+.intro .margin{
+    
+    margin: 0 auto;
+
+    color: #525770;
+    font-weight: 1500;
+}
+.Subscribe0
+{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	flex-wrap:wrap;
+	margin-top:2rem;
+	width:90%;
+	padding:2rem;
+	background-color:white;
+}
+.input
+{
+	flex-wrap:wrap;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+#user
+{
+	flex-wrap:wrap;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+.button
+{
+	color:white;
+	margin-left:0.1rem;
+	padding:0.5rem 0rem;
+	text-align:center;
+	width:33%;
+	background-color:rgb(238,69,66);
+}
+
+.input1
+{
+	padding:0.4rem;
+	width:65%;
+}
+footer{background-color:white;}
+.footer
+{
+	font-size:0.8rem;
+	width: 74%;
+	border-top:darkgrey 1px solid;
+    margin: auto;
+    min-height: 20rem;
+		flex-wrap:wrap;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	
+}
+
+.footer1
+{
+	font-size:0.8rem;
+	color:darkgrey;
+	width: 74%;
+    margin: auto;
+	flex-wrap:wrap;
+	display:flex;
+	
+	padding-bottom:5rem;
+	justify-content:space-between;
+}
+
+.menuAdress li
+{	margin-bottom:0.5rem;
+}
+.menuAdress li a
+{	
+	color:rgb(186,186,186);	
+}
+.menuAdress 
+{	
+	list-style-type:none;	
+}
+.menuAdress .contact a
+{
+	color:black;
+	font-weight:bold;
+}
+#logo{
+height:3rem;
+margin-bottom:2rem;}
+.menuFooter
+{
+	display:flex;	
+	flex-wrap:wrap;
+	align-item:center;
+}
+.liste li ,.menuFooter li
+{display:flex;
+	margin-right:1rem;
+	align-items:center;
+	font-size:0.8rem;
+	font-weight:bold;
+}
+.menuFooter a
+{
+	text-decoration:none;
+	color:darkgrey;
+}

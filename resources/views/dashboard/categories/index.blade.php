@@ -9,12 +9,7 @@
                 <div class="portlet-title">
                     <div class="caption">
                         <i class="fa fa-comments"></i>عرض الأقسام </div>
-                    <div class="tools">
-                        <a href="javascript:;" class="collapse" data-original-title="" title=""> </a>
-                        <a href="#portlet-config" data-toggle="modal" class="config" data-original-title="" title=""> </a>
-                        <a href="javascript:;" class="reload" data-original-title="" title=""> </a>
-                        <a href="javascript:;" class="remove" data-original-title="" title=""> </a>
-                    </div>
+
                 </div>
                 <div class="portlet-body">
                     <div class="table-scrollable">
@@ -55,7 +50,8 @@
                                             </div>
                                             <div class="modal-body">
                                                 <form action="{{route('categories.destroy',$category->id)}}" method="post">
-                                                    {{method_field('Delete')}}
+                                                    {{-- {{method_field('Delete')}} --}}
+                                                    @method('delete')
                                                     @csrf
                                                     هل أنت متاكد من عملية الحذف ؟
                                                     <input id="id" type="hidden" name="id" class="form-control"

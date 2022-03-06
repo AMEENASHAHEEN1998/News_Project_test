@@ -1,272 +1,258 @@
-@extends('site.layout')
-@section('section')
-<div class="middle_bar">
-    <div class="featured_sliderarea">
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <title>Home</title>
+</head>
+<body>
+
+  <div class="bg-img">
+
+     <nav>
+      <div class="logo">
+         <img src="images/img1.png" alt="" id="img1">
+      </div>
+      <div class="toggle">
+
+          <i class="fa fa-bars ouvrir"></i>
+          <i class="fa fa-times fermer"></i>
+      </div>
+
+      <ul class="menu">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Membership</a></li>
+
+      </ul>
+
+      <ul class="login">
+          <li><a href="#"> Login</a> </li>
+          <li id="user"><a><i class="fa fa-user-o"></i></a></li>
+          <li><a href="#"><i class="fa fa-search" style="font-size:24px"></i></a></li>
+      </ul>
+     </nav>
+
+  <div class="container1">
+
+     <h1>7th Annual IBA Finance &amp; Capital Markets Tax Conference</h1>
+      <button id="bt1">SIGN UP</button>
+      <button id="bt2">LEARN MORE</button>
+    </div>
+
+        <a class="prev">❮</a>
+        <a class="next">❯</a>
+
+      </div>
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
         <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class=""></li>
-          <li data-target="#myCarousel" data-slide-to="1" class=""></li>
-          <li data-target="#myCarousel" data-slide-to="2" class=""></li>
-          <li data-target="#myCarousel" data-slide-to="3" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
-        <div class="carousel-inner" role="listbox">
-          <div class="item"> <img src="images/668x328.jpg" alt="">
-            <div class="carousel-caption">
-              <h1><a href="#"> Aliquam malesuada diam eget turpis varius 1</a></h1>
-            </div>
-          </div>
-          <div class="item"> <img src="images/668x328.jpg" alt="">
-            <div class="carousel-caption">
-              <h1><a href="#"> Aliquam malesuada diam eget turpis varius 2</a></h1>
-            </div>
-          </div>
-          <div class="item"> <img src="images/668x328.jpg" alt="">
-            <div class="carousel-caption">
-              <h1><a href="#"> Aliquam malesuada diam eget turpis varius 3</a></h1>
-            </div>
-          </div>
-          <div class="item active"> <img src="images/668x328.jpg" alt="">
-            <div class="carousel-caption">
-              <h1><a href="#"> Aliquam malesuada diam eget turpis varius 4</a></h1>
-            </div>
-          </div>
+      </div>
+      <div class="container">
+
+
+        <div class="titel">
+            <h1><i class="i"></i>   Upcoming Events</h1>
+            <button>See all evants</button>
         </div>
-        <a class="left left_slide" href="#myCarousel" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> </a> <a class="right right_slide" href="#myCarousel" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> </a></div>
-    </div>
-    <div class="single_category wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
-      <div class="category_title"> <a href="pages/category-archive.html">Category 1</a></div>
-      <div class="single_category_inner">
-        <ul class="catg_nav">
-          <li>
-            <div class="catgimg_container"> <a class="catg1_img" href="pages/single_page.html"> <img src="images/310x150.jpg" alt=""> </a></div>
-            <a class="catg_title" href="pages/single_page.html"> Curabitur ac dictum nisl eu hendrerit ante</a>
-            <div class="sing_commentbox">
-              <p><i class="fa fa-calendar"></i>19 Nov 2045</p>
-              <a href="#"><i class="fa fa-comments"></i>20 Comments</a></div>
-         </li>
-          <li>
-            <div class="catgimg_container"> <a class="catg1_img" href="pages/single_page.html"> <img src="images/310x150.jpg" alt=""> </a></div>
-            <a class="catg_title" href="pages/single_page.html">Fusce eu nulla semper porttitor felis sit amet</a>
-            <div class="sing_commentbox">
-              <p><i class="fa fa-calendar"></i>19 Nov 2045</p>
-              <a href="#"><i class="fa fa-comments"></i>20 Comments</a></div>
-         </li>
-          <li>
-            <div class="catgimg_container"> <a class="catg1_img" href="pages/single_page.html"> <img src="images/310x150.jpg" alt=""> </a></div>
-            <a class="catg_title" href="pages/single_page.html"> Curabitur ac dictum nisl eu hendrerit ante</a>
-            <div class="sing_commentbox">
-              <p><i class="fa fa-calendar"></i>19 Nov 2045</p>
-              <a href="pages/single_page.html"><i class="fa fa-comments"></i>20 Comments</a></div>
-         </li>
-          <li>
-            <div class="catgimg_container"> <a class="catg1_img" href="#"> <img src="images/310x150.jpg" alt=""> </a></div>
-            <a class="catg_title" href="#">Fusce eu nulla semper porttitor felis sit amet</a>
-            <div class="sing_commentbox">
-              <p><i class="fa fa-calendar"></i>19 Nov 2045</p>
-              <a href="#"><i class="fa fa-comments"></i>20 Comments</a></div>
-         </li>
-        </ul>
+
+
+
+        <div class="cadrs">
+
+            <div class="card-deck" id="deck">
+
+
+          <div class="card" style="width: 13rem;">
+            <img src="images/img6.jpg" class="card-img-top" alt="..." style="height:14rem;">
+            <div class="card-body1" id="card-body1">
+              <div class="article"><h5 class="card-title">Lorem Mergers and Acquisitions in the...</h5>
+              <p class="card-text">
+              Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum.
+              </p>
+              <div class="bor">
+              <a href="#" class="a" style="color:#d84f45;font-weight: 700; padding-right: 5rem;">Join Now <span><i class="fa fa-chevron-circle-right" aria-hidden="true" style="color:#d84f45;"></i></span></a>
+              <a href="#" class="a" style="color:#4b505a;font-weight: 700;">Learn More</a>
+            </div>
+            </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 13rem;">
+            <img src="images/img4.jpg" class="card-img-top" alt="..." style="height:14rem;">
+            <div class="card-body1" id="card-body1">
+              <div class="article"><h5 class="card-title">Lorem Mergers and Acquisitions in the...</h5>
+              <p class="card-text">
+              Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum.
+              </p>
+              <div class="bor">
+              <a href="#" class="a" style="color:#d84f45;font-weight: 700;padding-right: 5rem;">Join Now <span><i class="fa fa-chevron-circle-right" aria-hidden="true" style="color:#d84f45;"></i></span></a>
+              <a href="#" class="a" style="color:#4b505a;font-weight: 700;">Learn More</a>
+            </div>
+            </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 13rem;">
+            <img src="images/img2.png" class="card-img-top" alt="..." style="height:14rem;">
+            <div class="card-body1" id="card-body1">
+              <div class="article"><h5 class="card-title">Lorem Mergers and Acquisitions in the...</h5>
+              <p class="card-text">
+              Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum.
+              </p>
+              <div class="bor">
+              <a href="#" class="a" style="color:#d84f45;font-weight: 700;padding-right: 5rem;">Join Now <span><i class="fa fa-chevron-circle-right" aria-hidden="true" style="color:#d84f45;"></i></span></a>
+              <a href="#" class="a" style="color:#4b505a;font-weight: 700;">Learn More</a>
+              </div>
+            </div>
+            </div>
+          </div>
+
+
+        </div>
       </div>
     </div>
-    <div class="single_category  wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
-      <div class="category_title"> <a href="pages/category-archive.html">Category 2</a></div>
-      <div class="single_category_inner">
-        <ul class="catg_nav catg_nav2">
-          <li>
-            <div class="catgimg_container"> <a class="catg1_img" href="#"> <img src="images/310x300.jpg" alt=""> </a></div>
-            <a class="catg_title" href="#"> Curabitur ac dictum nisl eu hendrerit ante</a>
-            <div class="sing_commentbox">
-              <p><i class="fa fa-calendar"></i>19 Nov 2045</p>
-              <a href="#"><i class="fa fa-comments"></i>20 Comments</a></div>
-            <p class="post-summary">Suspendisse mauris dui, interdum vitae vehicula ut, posuere sed lectus. Nulla facilisi. Curabitur...</p>
-         </li>
-          <li>
-            <div class="catgimg_container"> <a class="catg1_img" href="#"> <img src="images/310x300.jpg" alt=""> </a></div>
-            <a class="catg_title" href="#">Fusce eu nulla semper porttitor felis sit amet</a>
-            <div class="sing_commentbox">
-              <p><i class="fa fa-calendar"></i>19 Nov 2045</p>
-              <a href="#"><i class="fa fa-comments"></i>20 Comments</a></div>
-            <p class="post-summary">Suspendisse mauris dui, interdum vitae vehicula ut, posuere sed lectus. Nulla facilisi. Curabitur...</p>
-         </li>
-        </ul>
+
+
+
+<div class="goodnews">
+  <div class="titel">
+      <h1><i class="i"></i>   Good news</h1>
+      <button>See all news</button>
+</div>
+<div class="container" id="container">
+
+      <div class="card" style="max-width: 750px; border: none;">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="images/img7.png" class="card-img" alt="">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">European 'revolution in regulatory framework'introduces..</h5>
+                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <a href="#" class="a" style="color:#d84f45;font-weight: 700;">Read More <span><i class="fa fa-chevron-circle-right" aria-hidden="true" style="color:#d84f45;"></i></span></a>
+
+              </div>
+            </div>
+          </div>
       </div>
-    </div>
-    <div class="category_three_fourarea  wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
-      <div class="category_three">
-        <div class="single_category">
-          <div class="category_title"> <a href="pages/single_page.html">Category 3</a></div>
-          <div class="single_category_inner">
-            <ul class="catg_nav catg_nav3">
-              <li>
-                <div class="catgimg_container"> <a class="catg1_img" href="pages/single_page.html"> <img src="images/292x150.jpg" alt=""> </a></div>
-                <a class="catg_title" href="#"> Curabitur ac dictum nisl eu hendrerit ante</a>
-                <div class="sing_commentbox">
-                  <p><i class="fa fa-calendar"></i>19 Nov 2045</p>
-                  <a href="#"><i class="fa fa-comments"></i>20 Comments</a></div>
-                <p class="post-summary">Duis erat purus, tincidunt vel ullamcorper ut, consequat tempus nibh. Proin condimentum risus ligula, dignissim mollis tortor hendrerit vel. Aliquam...</p>
-             </li>
+
+      <div class="card" style="max-width: 750px;border: none;">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="images/img10.jpg" class="card-img" alt="">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">European 'revolution in regulatory framework'introduces..</h5>
+                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <a href="#" class="a" style="color:#d84f45;font-weight: 700;">Read More <span><i class="fa fa-chevron-circle-right" aria-hidden="true" style="color:#d84f45;"></i></span></a>
+
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="card" style="max-width: 750px;border: none;">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="images/img9.jpg" class="card-img" alt="">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">European 'revolution in regulatory framework'introduces..</h5>
+                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <a href="#" class="a" style="color:#d84f45;font-weight: 700;">Read More <span><i class="fa fa-chevron-circle-right" aria-hidden="true" style="color:#d84f45;"></i></span></a>
+
+              </div>
+            </div>
+          </div>
+      </div>
+
+</div>
+</div>
+
+
+	 <footer class="">
+		<div class="footer">
+<div>
+<img src="images/img1.png" id="logo" style="height:20">
+
+		<div>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--entypo-social" width="30" height="40" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20" data-icon="entypo-social:facebook-with-circle" data-width="30" data-height="40" style="color: gray; cursor: pointer;"><path fill="currentColor" d="M10 .4C4.698.4.4 4.698.4 10s4.298 9.6 9.6 9.6s9.6-4.298 9.6-9.6S15.302.4 10 .4zm2.274 6.634h-1.443c-.171 0-.361.225-.361.524V8.6h1.805l-.273 1.486H10.47v4.461H8.767v-4.461H7.222V8.6h1.545v-.874c0-1.254.87-2.273 2.064-2.273h1.443v1.581z"></path></svg>
+            <!-- twitter-->
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--entypo-social" width="30" height="40" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20" data-icon="entypo-social:twitter-with-circle" data-width="30" data-height="40" style="color: gray; cursor: pointer;"><path fill="currentColor" d="M10 .4C4.698.4.4 4.698.4 10s4.298 9.6 9.6 9.6s9.6-4.298 9.6-9.6S15.302.4 10 .4zm3.905 7.864c.004.082.005.164.005.244c0 2.5-1.901 5.381-5.379 5.381a5.335 5.335 0 0 1-2.898-.85c.147.018.298.025.451.025c.886 0 1.701-.301 2.348-.809a1.895 1.895 0 0 1-1.766-1.312a1.9 1.9 0 0 0 .853-.033a1.892 1.892 0 0 1-1.517-1.854v-.023c.255.141.547.227.857.237a1.89 1.89 0 0 1-.585-2.526a5.376 5.376 0 0 0 3.897 1.977a1.891 1.891 0 0 1 3.222-1.725a3.797 3.797 0 0 0 1.2-.459a1.9 1.9 0 0 1-.831 1.047a3.799 3.799 0 0 0 1.086-.299a3.834 3.834 0 0 1-.943.979z"></path></svg>
+            <!-- instagram -->
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--entypo-social" width="30" height="40" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20" data-icon="entypo-social:instagram-with-circle" data-width="30" data-height="40" style="color: gray; cursor: pointer;"><path fill="currentColor" d="M13 10a3 3 0 1 1-6 0c0-.171.018-.338.049-.5H6v3.997c0 .278.225.503.503.503h6.995a.503.503 0 0 0 .502-.503V9.5h-1.049c.031.162.049.329.049.5zm-3 2a2 2 0 1 0-.001-4.001A2 2 0 0 0 10 12zm2.4-4.1h1.199a.301.301 0 0 0 .301-.3V6.401a.301.301 0 0 0-.301-.301H12.4a.301.301 0 0 0-.301.301V7.6c.001.165.136.3.301.3zM10 .4A9.6 9.6 0 0 0 .4 10a9.6 9.6 0 0 0 9.6 9.6a9.6 9.6 0 0 0 9.6-9.6A9.6 9.6 0 0 0 10 .4zm5 13.489C15 14.5 14.5 15 13.889 15H6.111C5.5 15 5 14.5 5 13.889V6.111C5 5.5 5.5 5 6.111 5h7.778C14.5 5 15 5.5 15 6.111v7.778z"></path></svg>
+        </div>
+</div>
+			<div>
+			<ul class="menuAdress">
+                <li class="contact"><a href="#">Address</a></li>
+                <li><a href="#">International Trade Law Advisors</a></li>
+                <li><a href="#">1025 Connecticut Ave,N,W,Suit 1012</a></li>
+                <li><a href="#"> Washingtong.D.D.20036</a></li>
+
             </ul>
-            <div class="catg3_bottompost wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
-              <ul class="catg3_snav">
-                <li>
-                  <div class="media"> <a class="media-left" href="pages/single_page.html"> <img src="images/70x70.jpg" alt=""> </a>
-                    <div class="media-body"> <a class="catg_title" href="pages/single_page.html"> Aliquam malesuada diam eget turpis varius</a>
-                      <div class="sing_commentbox">
-                        <p><i class="fa fa-calendar"></i>19 Nov 2045</p>
-                        <a href="#"><i class="fa fa-comments"></i>20 Comments</a></div>
-                    </div>
-                  </div>
-               </li>
-                <li>
-                  <div class="media"> <a class="media-left" href="pages/single_page.html"> <img src="images/70x70.jpg" alt=""> </a>
-                    <div class="media-body"> <a class="catg_title" href="pages/single_page.html"> Aliquam malesuada diam eget turpis varius</a>
-                      <div class="sing_commentbox">
-                        <p><i class="fa fa-calendar"></i>19 Nov 2045</p>
-                        <a href="#"><i class="fa fa-comments"></i>20 Comments</a></div>
-                    </div>
-                  </div>
-               </li>
-                <li>
-                  <div class="media"> <a class="media-left" href="pages/single_page.html"> <img src="images/70x70.jpg" alt=""> </a>
-                    <div class="media-body"> <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>
-                      <div class="sing_commentbox">
-                        <p><i class="fa fa-calendar"></i>19 Nov 2045</p>
-                        <a href="#"><i class="fa fa-comments"></i>20 Comments</a></div>
-                    </div>
-                  </div>
-               </li>
-                <li>
-                  <div class="media"> <a class="media-left" href="pages/single_page.html"> <img src="images/70x70.jpg" alt=""> </a>
-                    <div class="media-body"> <a class="catg_title" href="pages/single_page.html"> Aliquam malesuada diam eget turpis varius</a>
-                      <div class="sing_commentbox">
-                        <p><i class="fa fa-calendar"></i>19 Nov 2045</p>
-                        <a href="#"><i class="fa fa-comments"></i>20 Comments</a></div>
-                    </div>
-                  </div>
-               </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="category_four wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
-        <div class="single_category">
-          <div class="category_title"> <a href="#">Category 4</a></div>
-          <div class="single_category_inner">
-            <ul class="catg_nav catg_nav3">
-              <li>
-                <div class="catgimg_container"> <a class="catg1_img" href="pages/single_page.html"> <img src="images/292x150.jpg" alt=""> </a></div>
-                <a class="catg_title" href="pages/single_page.html"> Curabitur ac dictum nisl eu hendrerit ante</a>
-                <div class="sing_commentbox">
-                  <p><i class="fa fa-calendar"></i>19 Nov 2045</p>
-                  <a href="#"><i class="fa fa-comments"></i>20 Comments</a></div>
-                <p class="post-summary">Duis erat purus, tincidunt vel ullamcorper ut, consequat tempus nibh. Proin condimentum risus ligula, dignissim mollis tortor hendrerit vel. Aliquam...</p>
-             </li>
+			</div>
+
+			<div>
+			<ul class="menuAdress">
+                <li class="contact"><a href="#">Contact</a></li>
+                <li><a href="#">Tel: +01 202.642.4850</a></li>
+                <li><a href="#">Fax: +01 202.318.1412</a></li>
+                <li><a href="#"> Email: info@GlobalTradeLawAdvisors.com</a></li>
+
             </ul>
-            <div class="catg3_bottompost wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
-              <ul class="catg3_snav">
-                <li>
-                  <div class="media"> <a class="media-left" href="pages/single_page.html"> <img src="images/70x70.jpg" alt=""> </a>
-                    <div class="media-body"> <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>
-                      <div class="sing_commentbox">
-                        <p><i class="fa fa-calendar"></i>19 Nov 2045</p>
-                        <a href="#"><i class="fa fa-comments"></i>20 Comments</a></div>
-                    </div>
-                  </div>
-               </li>
-                <li>
-                  <div class="media"> <a class="media-left" href="#"> <img src="images/70x70.jpg" alt=""> </a>
-                    <div class="media-body"> <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>
-                      <div class="sing_commentbox">
-                        <p><i class="fa fa-calendar"></i>19 Nov 2045</p>
-                        <a href="#"><i class="fa fa-comments"></i>20 Comments</a></div>
-                    </div>
-                  </div>
-               </li>
-                <li>
-                  <div class="media"> <a class="media-left" href="#"> <img src="images/70x70.jpg" alt=""> </a>
-                    <div class="media-body"> <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>
-                      <div class="sing_commentbox">
-                        <p><i class="fa fa-calendar"></i>19 Nov 2045</p>
-                        <a href="#"><i class="fa fa-comments"></i>20 Comments</a></div>
-                    </div>
-                  </div>
-               </li>
-                <li>
-                  <div class="media"> <a class="media-left" href="#"> <img src="images/70x70.jpg" alt=""> </a>
-                    <div class="media-body"> <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>
-                      <div class="sing_commentbox">
-                        <p><i class="fa fa-calendar"></i>19 Nov 2045</p>
-                        <a href="#"><i class="fa fa-comments"></i>20 Comments</a></div>
-                    </div>
-                  </div>
-               </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="single_category wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
-      <div class="category_title"> <a href="#">Category 5</a></div>
-      <div class="single_category_inner">
-        <ul class="catg3_snav catg5_nav">
-          <li>
-            <div class="media"> <a href="#" class="media-left"> <img alt="" src="images/70x70.jpg"> </a>
-              <div class="media-body"> <a href="#" class="catg_title"> Aliquam malesuada diam eget turpis varius</a>
-                <div class="sing_commentbox">
-                  <p><i class="fa fa-calendar"></i>19 Nov 2045</p>
-                  <a href="#"><i class="fa fa-comments"></i>20 Comments</a></div>
-              </div>
-            </div>
-         </li>
-          <li>
-            <div class="media"> <a href="#" class="media-left"> <img alt="" src="images/70x70.jpg"> </a>
-              <div class="media-body"> <a href="#" class="catg_title"> Aliquam malesuada diam eget turpis varius</a>
-                <div class="sing_commentbox">
-                  <p><i class="fa fa-calendar"></i>19 Nov 2045</p>
-                  <a href="#"><i class="fa fa-comments"></i>20 Comments</a></div>
-              </div>
-            </div>
-         </li>
-          <li>
-            <div class="media"> <a href="#" class="media-left"> <img alt="" src="images/70x70.jpg"> </a>
-              <div class="media-body"> <a href="#" class="catg_title"> Aliquam malesuada diam eget turpis varius</a>
-                <div class="sing_commentbox">
-                  <p><i class="fa fa-calendar"></i>19 Nov 2045</p>
-                  <a href="#"><i class="fa fa-comments"></i>20 Comments</a></div>
-              </div>
-            </div>
-         </li>
-          <li>
-            <div class="media"> <a href="#" class="media-left"> <img alt="" src="images/70x70.jpg"> </a>
-              <div class="media-body"> <a href="#" class="catg_title"> Aliquam malesuada diam eget turpis varius</a>
-                <div class="sing_commentbox">
-                  <p><i class="fa fa-calendar"></i>19 Nov 2045</p>
-                  <a href="#"><i class="fa fa-comments"></i>20 Comments</a></div>
-              </div>
-            </div>
-         </li>
-          <li>
-            <div class="media"> <a href="#" class="media-left"> <img alt="" src="images/70x70.jpg"> </a>
-              <div class="media-body"> <a href="#" class="catg_title"> Aliquam malesuada diam eget turpis varius</a>
-                <div class="sing_commentbox">
-                  <p><i class="fa fa-calendar"></i>19 Nov 2045</p>
-                  <a href="#"><i class="fa fa-comments"></i>20 Comments</a></div>
-              </div>
-            </div>
-         </li>
-          <li>
-            <div class="media"> <a href="#" class="media-left"> <img alt="" src="images/70x70.jpg"> </a>
-              <div class="media-body"> <a href="#" class="catg_title"> Aliquam malesuada diam eget turpis varius</a>
-                <div class="sing_commentbox">
-                  <p><i class="fa fa-calendar"></i>19 Nov 2045</p>
-                  <a href="#"><i class="fa fa-comments"></i>20 Comments</a></div>
-              </div>
-            </div>
-         </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-@endsection
+			</div>
+
+			<div>
+			<ul class="menuAdress">
+                <li><a href="#">About</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#"> Membership</a></li>
+
+            </ul>
+			</div>
+
+		</div>
+
+<div class="footer1">
+<div>
+Global Tride Advisions - All rights reserved
+</div>
+
+<ul class="menuFooter">
+                <li class="contact"><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#"> Pricing</a></li>
+
+ </ul>
+</div>
+    </footer>
+
+<script src="script.js"></script>
+
+
+</body></html>
