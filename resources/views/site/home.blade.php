@@ -12,7 +12,7 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
   <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
-   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="{{ asset('site/home/css/style.css') }}">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
    <title>Home</title>
@@ -23,7 +23,7 @@
 
      <nav>
       <div class="logo">
-         <img src="images/img1.png" alt="" id="img1">
+         <img src="{{ asset('site/home/images/img1.png') }}" alt="" id="img1">
       </div>
       <div class="toggle">
 
@@ -82,7 +82,7 @@
 
 
           <div class="card" style="width: 13rem;">
-            <img src="images/img6.jpg" class="card-img-top" alt="..." style="height:14rem;">
+            <img src="{{ asset('site/home/images/img6.jpg') }}" class="card-img-top" alt="..." style="height:14rem;">
             <div class="card-body1" id="card-body1">
               <div class="article"><h5 class="card-title">Lorem Mergers and Acquisitions in the...</h5>
               <p class="card-text">
@@ -97,7 +97,7 @@
           </div>
 
           <div class="card" style="width: 13rem;">
-            <img src="images/img4.jpg" class="card-img-top" alt="..." style="height:14rem;">
+            <img src="{{ asset('site/home/images/img4.jpg') }}" class="card-img-top" alt="..." style="height:14rem;">
             <div class="card-body1" id="card-body1">
               <div class="article"><h5 class="card-title">Lorem Mergers and Acquisitions in the...</h5>
               <p class="card-text">
@@ -112,7 +112,7 @@
           </div>
 
           <div class="card" style="width: 13rem;">
-            <img src="images/img2.png" class="card-img-top" alt="..." style="height:14rem;">
+            <img src="{{ asset('site/home/images/img2.png') }}" class="card-img-top" alt="..." style="height:14rem;">
             <div class="card-body1" id="card-body1">
               <div class="article"><h5 class="card-title">Lorem Mergers and Acquisitions in the...</h5>
               <p class="card-text">
@@ -143,7 +143,7 @@
       <div class="card" style="max-width: 750px; border: none;">
           <div class="row no-gutters">
             <div class="col-md-4">
-              <img src="images/img7.png" class="card-img" alt="">
+              <img src="{{ asset('site/home/images/img7.png') }}" class="card-img" alt="">
             </div>
             <div class="col-md-8">
               <div class="card-body">
@@ -159,7 +159,7 @@
       <div class="card" style="max-width: 750px;border: none;">
           <div class="row no-gutters">
             <div class="col-md-4">
-              <img src="images/img10.jpg" class="card-img" alt="">
+              <img src="{{ asset('site/home/images/img10.jpg') }}" class="card-img" alt="">
             </div>
             <div class="col-md-8">
               <div class="card-body">
@@ -175,7 +175,7 @@
       <div class="card" style="max-width: 750px;border: none;">
           <div class="row no-gutters">
             <div class="col-md-4">
-              <img src="images/img9.jpg" class="card-img" alt="">
+              <img src="{{ asset('site/home/images/img9.jpg') }}" class="card-img" alt="">
             </div>
             <div class="col-md-8">
               <div class="card-body">
@@ -195,7 +195,7 @@
 	 <footer class="">
 		<div class="footer">
 <div>
-<img src="images/img1.png" id="logo" style="height:20">
+<img src="{{ asset('site/home/images/img1.png') }}" id="logo" style="height:20">
 
 		<div>
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--entypo-social" width="30" height="40" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20" data-icon="entypo-social:facebook-with-circle" data-width="30" data-height="40" style="color: gray; cursor: pointer;"><path fill="currentColor" d="M10 .4C4.698.4.4 4.698.4 10s4.298 9.6 9.6 9.6s9.6-4.298 9.6-9.6S15.302.4 10 .4zm2.274 6.634h-1.443c-.171 0-.361.225-.361.524V8.6h1.805l-.273 1.486H10.47v4.461H8.767v-4.461H7.222V8.6h1.545v-.874c0-1.254.87-2.273 2.064-2.273h1.443v1.581z"></path></svg>
@@ -252,7 +252,7 @@ Global Tride Advisions - All rights reserved
 </div>
     </footer>
 
-<script src="script.js"></script>
+<script src="{{ asset('site/home/script.js') }}"></script>
 
 
 </body></html>
