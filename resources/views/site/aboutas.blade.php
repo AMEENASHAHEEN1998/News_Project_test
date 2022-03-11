@@ -417,16 +417,16 @@
               </div>
 
               <ul class="menu">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">News</a></li>
-                  <li><a href="#">Events</a></li>
-                  <li><a href="#">Membership</a></li>
+                  <li><a href="/">الرئيسية</a></li>
+                  <li><a href="/aboutas">من نحن</a></li>
+                  <li><a href="/newsCategory">أخر الأخبار</a></li>
+                  <li><a href="#">الفعاليات </a></li>
+                  <li><a href="#">العضوية</a></li>
 
               </ul>
 
               <ul class="login">
-                  <li><a href="#"> Login</a> </li>
+                  <li><a href="/login"> الدخول </a> </li>
                   <li id="user"><a><i class="fa fa-user-o"></i></a></li>
                   <li><a href="#"><i class="fa fa-search" style="font-size:24px"></i></a></li>
               </ul>
@@ -443,14 +443,15 @@
       <div class="container mt-3">
           <div class="about" id="about1">
               <img src="{{ asset('site/aboutas/logo.png') }}" id="logo1">
-              <p>Global Trade Law Advisors began as Antidumping Defense Group in 2009 with the collaboration of 4<br> U.S. trade remedies attorneys. and has grown to include law firms focusing on all legal issues related to internasional trade...including trade remedies defense, competition law, international corporate law. customs low, and more. Members of GTLA are located in nearly every region of the world, and provide competent legal and consulting services for all your international business needs.</p>
+              <p>بدأت شركة Global Trade Law Advisors كمجموعة مكافحة الإغراق الدفاعية في عام 2009 بالتعاون مع 4
+محامو سبل الانتصاف التجارية الأمريكية. وقد نمت لتشمل شركات المحاماة التي تركز على جميع القضايا القانونية المتعلقة بالتجارة الدولية ... بما في ذلك الدفاع عن العلاجات التجارية ، وقانون المنافسة ، وقانون الشركات الدولي. الجمارك منخفضة ، وأكثر من ذلك. يتواجد أعضاء GTLA في كل منطقة من مناطق العالم تقريبًا ، ويقدمون خدمات قانونية واستشارية مختصة لجميع احتياجات أعمالك الدولية..</p>
           </div>
           <div class="about">
-              <div class="p"><span><i class="i"></i></span><h3 id="aim">Aim and Objectivenes</h3></div>
-              <div class="p"><span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span><p>To promote an exchange of information between legal associations worldwide</p></div>
-              <div class="p"><span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span><p>To support the independence of the judiciary and the right of lawyers to practise their profession without interference </p></div>
-              <div class="p"><span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span><p>Support of human rights for lawyers worldwide through its Human Rights institue</p>	</div>
-              <button type="button" id="Join">Join GTLA Now</button>
+              <div class="p"><span><i class="i"></i></span><h3 id="aim"> الأهداف </h3></div>
+              <div class="p"><span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span><p>لتعزيز تبادل المعلومات بين الجمعيات القانونية في جميع أنحاء العالم </p></div>
+              <div class="p"><span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span><p> دعم استقلال القضاء وحق المحامين في ممارسة مهنتهم دون تدخل </p></div>
+              <div class="p"><span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span><p> دعم حقوق الإنسان للمحامين في جميع أنحاء العالم من خلال معهد حقوق الإنسان</p>	</div>
+              <button type="button" id="Join"> أنضمام الأن </button>
           </div>
       </div>
 
@@ -468,7 +469,7 @@
   </div>
               <div>
               <ul class="menuAdress">
-                  <li class="contact"><a href="#">Address</a></li>
+                  <li class="contact"><a href="#">العنوان </a></li>
                   <li><a href="#">International Trade Law Advisors</a></li>
                   <li><a href="#">1025 Connecticut Ave,N,W,Suit 1012</a></li>
                   <li><a href="#"> Washingtong.D.D.20036</a></li>
@@ -478,7 +479,7 @@
 
               <div>
               <ul class="menuAdress">
-                  <li class="contact"><a href="#">Contact</a></li>
+                  <li class="contact"><a href="#"> للتواصل </a></li>
                   <li><a href="#">Tel: +01 202.642.4850</a></li>
                   <li><a href="#">Fax: +01 202.318.1412</a></li>
                   <li><a href="#"> Email: info@GlobalTradeLawAdvisors.com</a></li>
@@ -488,10 +489,10 @@
 
               <div>
               <ul class="menuAdress">
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">News</a></li>
-                  <li><a href="#">Events</a></li>
-                  <li><a href="#"> Membership</a></li>
+                  <li><a href="#">عنا</a></li>
+                  <li><a href="#">أخر الأخبار</a></li>
+                  <li><a href="#">الفعاليات</a></li>
+                  <li><a href="#"> الفعاليات </a></li>
 
               </ul>
               </div>
@@ -500,7 +501,7 @@
 
   <div class="footer1">
   <div>
-  Global Tride Advisions - All rights reserved
+    المنظمة العربية للتجارة الدولية @2022 
   </div>
 
   <ul class="menuFooter">

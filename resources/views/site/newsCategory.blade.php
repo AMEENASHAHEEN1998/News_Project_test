@@ -247,16 +247,17 @@
               </div>
 
               <ul class="menu">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">News</a></li>
-                  <li><a href="#">Events</a></li>
-                  <li><a href="#">Membership</a></li>
+                <li><a href="/">الرئيسية</a></li>
+                <li><a href="/aboutas">من نحن</a></li>
+                <li><a href="/newsCategory">أخر الأخبار</a></li>
+                <li><a href="#">الفعاليات </a></li>
+                <li><a href="#">العضوية</a></li>
 
-              </ul>
+            </ul>
+
 
               <ul class="login">
-                  <li><a href="#"> Login</a> </li>
+                  <li><a href="/login"> الدخول</a> </li>
                   <li id="user"><a><i class="fa fa-user-o"></i></a></li>
                   <li><a href="#"><i class="fa fa-search" style="font-size:24px"></i></a></li>
               </ul>
@@ -286,18 +287,16 @@
        </div>
 
            <div class="trending">
-              <h2 id="h2"> TRENDING NEWS</h2>
-              <div class="SeeAllNews">See all news</div>
+              <h2 id="h2"> أخر الأخبار</h2>
+              <div class="SeeAllNews"> See all news </div>
           </div>
 
       <div class="ipsume">
                   <div><img src="{{ asset('site/newsCategory/img.jpg') }}" class="card-img-top" alt="..." style="width: 24rem;height:20rem;"></div>
                   <div class="card-body1" style="width: 25rem">
-                      <h5 class="card-title">Lorem ipsum ow to respond to a cyber-attack crisis..</h5>
-                      <p class="card-text">
-                      Fusce  vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus.vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod ligula. Maenecenas eu.
-                      </p>
-                      <a href="#" class="a">Read More<span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span></a>
+                      <h5 class="card-title">عنوان الخبر</h5>
+                      <p class="card-text">محتوى الخبر</p>
+                      <a href="#" class="a">رؤية المزيد <span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span></a>
                   </div>
               </div>
 
@@ -308,105 +307,91 @@
               <div class="card" style="width: 15rem;">
                   <img src="{{ asset('site/newsCategory/img1.jpg') }}" class="card-img-top" alt="...">
                   <div class="card-body">
-                      <h5 class="card-title">Lorem Mergers and Acquisitions in the...</h5>
-                      <p class="card-text">
-                      Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum.
-                      </p>
-                      <a href="#" class="a">Read More<span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span></a>
+                    <h5 class="card-title">عنوان الخبر</h5>
+                    <p class="card-text">محتوى الخبر</p>
+                      <a href="#" class="a">رؤية المزيد<span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span></a>
                   </div>
               </div>
 
               <div class="card" style="width: 15rem;">
                   <img src="{{ asset('site/newsCategory/img2.jpg') }}" class="card-img-top" alt="...">
                   <div class="card-body">
-                      <h5 class="card-title">Lorem Mergers and Acquisitions in the...</h5>
-                      <p class="card-text">
-                      Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum.
-                      </p>
-                      <a href="#" class="a">Read More<span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span></a>
+                    <h5 class="card-title">عنوان الخبر</h5>
+                    <p class="card-text">محتوى الخبر</p>
+                      <a href="#" class="a"> رؤية المزيد <span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span></a>
                   </div>
               </div>
 
               <div class="card" style="width: 15rem;">
                   <img src="{{ asset('site/newsCategory/img3.jpg') }}" class="card-img-top" alt="...">
                   <div class="card-body">
-                      <h5 class="card-title">Lorem Mergers and Acquisitions in the...</h5>
-                      <p class="card-text">
-                      Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum.
-                      </p>
-                      <a href="#" class="a">Read More <span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span></a>
+                    <h5 class="card-title">عنوان الخبر</h5>
+                    <p class="card-text">محتوى الخبر</p>
+
+                      <a href="#" class="a"> رؤية المزيد <span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span></a>
                   </div>
               </div>
 
               <div class="card" style="width: 15rem;">
                   <img src="{{ asset('site/newsCategory/img2.jpg') }}" class="card-img-top" alt="...">
                   <div class="card-body">
-                      <h5 class="card-title">Lorem Mergers and Acquisitions in the...</h5>
-                      <p class="card-text">
-                      Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum.
-                      </p>
-                      <a href="#" class="a">Read More<span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span></a>
+                     <h5 class="card-title">عنوان الخبر</h5>
+                      <p class="card-text">محتوى الخبر</p>
+
+                      <a href="#" class="a"> رؤية المزيد<span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span></a>
                   </div>
               </div>
 
               <div class="card" style="width: 15rem;">
                   <img src="{{ asset('site/newsCategory/img1.jpg') }}" class="card-img-top" alt="...">
                   <div class="card-body">
-                      <h5 class="card-title">Lorem Mergers and Acquisitions in the...</h5>
-                      <p class="card-text">
-                      Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum.
-                      </p>
-                      <a href="#" class="a">Read More<span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span></a>
+                     <h5 class="card-title">عنوان الخبر</h5>
+                      <p class="card-text">محتوى الخبر</p>
+
+                      <a href="#" class="a"> رؤية المزيد <span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span></a>
                   </div>
               </div>
 
                       <div class="card" style="width: 15rem;">
                   <img src="{{ asset('site/newsCategory/img2.jpg') }}" class="card-img-top" alt="...">
                   <div class="card-body">
-                      <h5 class="card-title">Lorem Mergers and Acquisitions in the...</h5>
-                      <p class="card-text">
-                      Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum.
-                      </p>
-                      <a href="#" class="a">Read More<span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span></a>
+                    <h5 class="card-title">عنوان الخبر</h5>
+                    <p class="card-text">محتوى الخبر</p>
+
+                      <a href="#" class="a"> رؤية المزيد <span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span></a>
                   </div>
               </div>
 
                           <div class="card" style="width: 15rem;">
                   <img src="{{ asset('site/newsCategory/img3.jpg') }}" class="card-img-top" alt="...">
                   <div class="card-body">
-                      <h5 class="card-title">Lorem Mergers and Acquisitions in the...</h5>
-                      <p class="card-text">
-                      Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum.
-                      </p>
-                      <a href="#" class="a">Read More<span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span></a>
+                    <h5 class="card-title">عنوان الخبر</h5>
+                      <p class="card-text">محتوى الخبر</p>
+                      <a href="#" class="a"> رؤية المزيد<span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span></a>
                   </div>
               </div>
 
                                   <div class="card" style="width: 15rem;">
                   <img src="{{ asset('site/newsCategory/img2.jpg') }}" class="card-img-top" alt="...">
                   <div class="card-body">
-                      <h5 class="card-title">Lorem Mergers and Acquisitions in the...</h5>
-                      <p class="card-text">
-                      Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum.
-                      </p>
-                      <a href="#" class="a">Read More<span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span></a>
+                    <h5 class="card-title">عنوان الخبر</h5>
+                      <p class="card-text">محتوى الخبر</p>
+                      <a href="#" class="a"> رؤية المزيد<span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span></a>
                   </div>
               </div>
 
                                   <div class="card" style="width: 15rem;">
                   <img src="{{ asset('site/newsCategory/img4.jpg') }}" class="card-img-top" alt="...">
                   <div class="card-body">
-                      <h5 class="card-title">Lorem Mergers and Acquisitions in the...</h5>
-                      <p class="card-text">
-                      Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum.
-                      </p>
-                      <a href="#" class="a">Read More<span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span></a>
+                    <h5 class="card-title">عنوان الخبر</h5>
+                      <p class="card-text">محتوى الخبر</p>
+                      <a href="#" class="a"> رؤية المزيد <span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span></a>
                   </div>
               </div>
 
 
                   <div class="Subscribe0">
-                      <h5 class="Subscribe1">Subscribe our news latter</h5>
+                      <h5 class="Subscribe1"> لمتابعة الأخبار </h5>
                       <div class="input"><input placeholder="Email adress" class="input1" type="text"><div type="button" class="button">SUBSCRIBE</div></div>
 
                   </div>
@@ -430,7 +415,7 @@
   </div>
               <div>
               <ul class="menuAdress">
-                  <li class="contact"><a href="#">Address</a></li>
+                  <li class="contact"><a href="#">العنوان </a></li>
                   <li><a href="#">International Trade Law Advisors</a></li>
                   <li><a href="#">1025 Connecticut Ave,N,W,Suit 1012</a></li>
                   <li><a href="#"> Washingtong.D.D.20036</a></li>
@@ -440,7 +425,7 @@
 
               <div>
               <ul class="menuAdress">
-                  <li class="contact"><a href="#">Contact</a></li>
+                  <li class="contact"><a href="#">للتواصل </a></li>
                   <li><a href="#">Tel: +01 202.642.4850</a></li>
                   <li><a href="#">Fax: +01 202.318.1412</a></li>
                   <li><a href="#"> Email: info@GlobalTradeLawAdvisors.com</a></li>
@@ -450,8 +435,8 @@
 
               <div>
               <ul class="menuAdress">
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">News</a></li>
+                  <li><a href="/aboutas">About</a></li>
+                  <li><a href="/newscategory">News</a></li>
                   <li><a href="#">Events</a></li>
                   <li><a href="#"> Membership</a></li>
 
@@ -462,7 +447,7 @@
 
   <div class="footer1">
   <div>
-  Global Tride Advisions - All rights reserved
+  المنظمة العربية للتجارة الدولية - جميع الحقوق محفوظة
   </div>
 
   <ul class="menuFooter">

@@ -1,6 +1,6 @@
 <html lang="en" dir="rtl"><!--<![endif]--><!-- BEGIN HEAD --><head>
     <meta charset="utf-8">
-    <title>أخبارك</title>
+    <title>المنظمة العربية للتجارة الدولية </title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="" name="description">
@@ -78,7 +78,7 @@
         <!-- END FORGOT PASSWORD FORM -->
 
     </div>
-    <div class="copyright"> 2014 © Metronic. Admin Dashboard Template. </div>
+    <div class="copyright"> المنظمة العربية للتجارة الدولية @2022  </div>
     <!--[if lt IE 9]>
 <script src="../assets/global/plugins/respond.min.js"></script>
 <script src="../assets/global/plugins/excanvas.min.js"></script>

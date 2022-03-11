@@ -32,16 +32,17 @@
       </div>
 
       <ul class="menu">
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">News</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Membership</a></li>
+        <li><a href="/">الرئيسية</a></li>
+        <li><a href="/aboutas">من نحن</a></li>
+        <li><a href="/newsCategory">أخر الأخبار</a></li>
+        <li><a href="#">الفعاليات </a></li>
+        <li><a href="#">العضوية</a></li>
 
-      </ul>
+    </ul>
+
 
       <ul class="login">
-          <li><a href="#"> Login</a> </li>
+          <li><a href="/login"> الدخول</a> </li>
           <li id="user"><a><i class="fa fa-user-o"></i></a></li>
           <li><a href="#"><i class="fa fa-search" style="font-size:24px"></i></a></li>
       </ul>
@@ -70,8 +71,8 @@
 
 
         <div class="titel">
-            <h1><i class="i"></i>   Upcoming Events</h1>
-            <button>See all evants</button>
+            <h1><i class="i"></i>   الفعاليات القادمة</h1>
+            <button>رؤية جميع الفعاليات</button>
         </div>
 
 
@@ -84,13 +85,12 @@
           <div class="card" style="width: 13rem;">
             <img src="{{ asset('site/home/images/img6.jpg') }}" class="card-img-top" alt="..." style="height:14rem;">
             <div class="card-body1" id="card-body1">
-              <div class="article"><h5 class="card-title">Lorem Mergers and Acquisitions in the...</h5>
+              <div class="article"><h5 class="card-title">عنوان الفعالية</h5>
               <p class="card-text">
-              Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum.
-              </p>
+              محتوى النص في الفعالية </p>
               <div class="bor">
-              <a href="#" class="a" style="color:#d84f45;font-weight: 700; padding-right: 5rem;">Join Now <span><i class="fa fa-chevron-circle-right" aria-hidden="true" style="color:#d84f45;"></i></span></a>
-              <a href="#" class="a" style="color:#4b505a;font-weight: 700;">Learn More</a>
+              <a href="#" class="a" style="color:#d84f45;font-weight: 700; padding-right: 5rem;">أنضم الأن  <span><i class="fa fa-chevron-circle-right" aria-hidden="true" style="color:#d84f45;"></i></span></a>
+              <a href="#" class="a" style="color:#4b505a;font-weight: 700;">رؤية المزيد</a>
             </div>
             </div>
             </div>
@@ -99,13 +99,12 @@
           <div class="card" style="width: 13rem;">
             <img src="{{ asset('site/home/images/img4.jpg') }}" class="card-img-top" alt="..." style="height:14rem;">
             <div class="card-body1" id="card-body1">
-              <div class="article"><h5 class="card-title">Lorem Mergers and Acquisitions in the...</h5>
-              <p class="card-text">
-              Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum.
+              <div class="article"><h5 class="card-title">عنوان الفعالية</h5>
+              <p class="card-text">محتوى النص للفعالية
               </p>
               <div class="bor">
-              <a href="#" class="a" style="color:#d84f45;font-weight: 700;padding-right: 5rem;">Join Now <span><i class="fa fa-chevron-circle-right" aria-hidden="true" style="color:#d84f45;"></i></span></a>
-              <a href="#" class="a" style="color:#4b505a;font-weight: 700;">Learn More</a>
+              <a href="#" class="a" style="color:#d84f45;font-weight: 700;padding-right: 5rem;"> أنضم الأن<span><i class="fa fa-chevron-circle-right" aria-hidden="true" style="color:#d84f45;"></i></span></a>
+              <a href="#" class="a" style="color:#4b505a;font-weight: 700;">رؤية المزيد</a>
             </div>
             </div>
             </div>
@@ -114,13 +113,11 @@
           <div class="card" style="width: 13rem;">
             <img src="{{ asset('site/home/images/img2.png') }}" class="card-img-top" alt="..." style="height:14rem;">
             <div class="card-body1" id="card-body1">
-              <div class="article"><h5 class="card-title">Lorem Mergers and Acquisitions in the...</h5>
-              <p class="card-text">
-              Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum.
-              </p>
+              <div class="article"><h5 class="card-title">عنوان الفعالية</h5>
+              <p class="card-text">محتوى النص  للفعالية               </p>
               <div class="bor">
-              <a href="#" class="a" style="color:#d84f45;font-weight: 700;padding-right: 5rem;">Join Now <span><i class="fa fa-chevron-circle-right" aria-hidden="true" style="color:#d84f45;"></i></span></a>
-              <a href="#" class="a" style="color:#4b505a;font-weight: 700;">Learn More</a>
+              <a href="#" class="a" style="color:#d84f45;font-weight: 700;padding-right: 5rem;">أنضم الأن <span><i class="fa fa-chevron-circle-right" aria-hidden="true" style="color:#d84f45;"></i></span></a>
+              <a href="#" class="a" style="color:#4b505a;font-weight: 700;"> رؤية المزيد</a>
               </div>
             </div>
             </div>
@@ -135,8 +132,8 @@
 
 <div class="goodnews">
   <div class="titel">
-      <h1><i class="i"></i>   Good news</h1>
-      <button>See all news</button>
+      <h1><i class="i"></i>   أخر الأخبار</h1>
+      <button>رؤية جميع الأخبار</button>
 </div>
 <div class="container" id="container">
 
@@ -147,9 +144,9 @@
             </div>
             <div class="col-md-8">
               <div class="card-body">
-                <h5 class="card-title">European 'revolution in regulatory framework'introduces..</h5>
-                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <a href="#" class="a" style="color:#d84f45;font-weight: 700;">Read More <span><i class="fa fa-chevron-circle-right" aria-hidden="true" style="color:#d84f45;"></i></span></a>
+                <h5 class="card-title"> عنوان المقال ..</h5>
+                 <p class="card-text"> محتوى تجريبي .</p>
+                <a href="#" class="a" style="color:#d84f45;font-weight: 700;">  رؤية المزيد <span><i class="fa fa-chevron-circle-right" aria-hidden="true" style="color:#d84f45;"></i></span></a>
 
               </div>
             </div>
@@ -163,9 +160,9 @@
             </div>
             <div class="col-md-8">
               <div class="card-body">
-                <h5 class="card-title">European 'revolution in regulatory framework'introduces..</h5>
-                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <a href="#" class="a" style="color:#d84f45;font-weight: 700;">Read More <span><i class="fa fa-chevron-circle-right" aria-hidden="true" style="color:#d84f45;"></i></span></a>
+                <h5 class="card-title"> عنوان المقال</h5>
+                 <p class="card-text"> محتوى تجريبي .</p>
+                <a href="#" class="a" style="color:#d84f45;font-weight: 700;"> رؤية المزيد <span><i class="fa fa-chevron-circle-right" aria-hidden="true" style="color:#d84f45;"></i></span></a>
 
               </div>
             </div>
@@ -179,9 +176,9 @@
             </div>
             <div class="col-md-8">
               <div class="card-body">
-                <h5 class="card-title">European 'revolution in regulatory framework'introduces..</h5>
-                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <a href="#" class="a" style="color:#d84f45;font-weight: 700;">Read More <span><i class="fa fa-chevron-circle-right" aria-hidden="true" style="color:#d84f45;"></i></span></a>
+                <h5 class="card-title">  عنوان المقال..</h5>
+                 <p class="card-text">محتوى تجريبي  .</p>
+                <a href="#" class="a" style="color:#d84f45;font-weight: 700;">رؤية المزيد <span><i class="fa fa-chevron-circle-right" aria-hidden="true" style="color:#d84f45;"></i></span></a>
 
               </div>
             </div>

@@ -2,7 +2,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('site/css/style.css') }}">
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
@@ -27,16 +27,17 @@
             </div>
 
             <ul class="menu">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Membership</a></li>
+                <li><a href="/">الرئيسية</a></li>
+                <li><a href="/aboutas">من نحن</a></li>
+                <li><a href="/newsCategory">أخر الأخبار</a></li>
+                <li><a href="#">الفعاليات </a></li>
+                <li><a href="#">العضوية</a></li>
 
             </ul>
 
+
             <ul class="login">
-                <li><a href="#"> Login</a> </li>
+                <li><a href="/login"> الدخول</a> </li>
                 <li><a><i class="fa fa-user-o" style="font-size:20px ;color: black;"></i></a></li>
                 <li><a href="#"><i class="fa fa-search" style="font-size:24px"></i></a></li>
             </ul>
@@ -47,7 +48,7 @@
        <div class="text1">
 
         <h1>
-            European 'revolution in and regulatory framework' lorem introduces lorem ipsum
+            عنوان المقال
         </h1>
         <p>Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin,
             erat a elementum rutrum, neque sem
