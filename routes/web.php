@@ -23,7 +23,7 @@ Route::get('/' , [SiteController::class , 'home'])->name('home');
 Route::get('home' , [SiteController::class , 'home'])->name('home');
 Route::get('aboutas' , [SiteController::class , 'aboutas'])->name('aboutas');
 Route::get('newsCategory' , [SiteController::class , 'newsCategory'])->name('newsCategory');
-Route::get('blog' , [SiteController::class , 'blog'])->name('blog');
+Route::get('blog/{id}' , [SiteController::class , 'blog'])->name('blog');
 
 // Route::view('/admin','dashboard.home');
 // Route::get();
@@ -34,4 +34,4 @@ Route::resource('categories' , CategoryController::class);
 Route::resource('blogs' , BlogController::class);
 
 Route::get('/admin' , [HomeController::class , 'index'] )->name('name')->middleware('admin');
-
+Route::view('/newHome' , 'site.newHome');

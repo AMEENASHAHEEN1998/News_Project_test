@@ -7,7 +7,7 @@
   }
   .bg-img {
     /* The image used */
-    background-image: url('../images/bgheader.jpg');
+    background-image: url( '../images/bgheader.jpg');
     min-height: 600px;
     /* Center and scale the image nicely */
     background-position: center;
@@ -22,7 +22,7 @@
     width: auto;
   }
   .container1 h1{
-    
+
       color: #fbfbfb;
       font-size: 4vw;
       margin-top: 4rem;
@@ -33,13 +33,13 @@
     margin-top: 4rem;
     margin-left: 17rem;
   }
-    
-.logo{    
+
+.logo{
       margin-left: 10rem;
       opacity: 0.6;
    }
- 
-  body {   
+
+  body {
     font-family: sans-serif;
   }
   .fa-user-o
@@ -86,7 +86,7 @@
         justify-content: space-between;
         width: 160px;
 		background: transparent;
-    } 
+    }
     ul li a{
         color:#fbfbfb;
         font-weight: 1000;
@@ -182,7 +182,7 @@ footer{
 	display:flex;
 	justify-content:space-between;
 	align-items:center;
-	
+
 }
 
 .footer1
@@ -193,7 +193,7 @@ footer{
     margin: auto;
 	flex-wrap:wrap;
 	display:flex;
-	
+
 	padding-bottom:5rem;
 	justify-content:space-between;
 }
@@ -202,12 +202,12 @@ footer{
 {	margin-bottom:0.5rem;
 }
 .menuAdress li a
-{	
-	color:rgb(186,186,186);	
+{
+	color:rgb(186,186,186);
 }
-.menuAdress 
-{	
-	list-style-type:none;	
+.menuAdress
+{
+	list-style-type:none;
 }
 .menuAdress .contact a
 {
@@ -219,7 +219,7 @@ height:3rem;
 margin-bottom:2rem;}
 .menuFooter
 {
-	display:flex;	
+	display:flex;
 	flex-wrap:wrap;
 	align-items:center;
 }
@@ -241,8 +241,8 @@ margin-right: 58px;
 }
 
 .card{
-    margin: 0 auto; 
-    float: none; 
+    margin: 0 auto;
+    float: none;
     margin-bottom: 200px;
 }
 .carousel-indicators li {
@@ -266,7 +266,7 @@ margin-right: 58px;
     transition: 0.6s ease;
     user-select: none;
   }
-  
+
   /* Position the "next button" to the right */
   .next {
     right: 0;
@@ -274,13 +274,13 @@ margin-right: 58px;
     background-color: rgba(255, 255, 255, 0.8);
     opacity: 0.6;
   }
-  
+
   .prev {
     left: 0;
     border-radius: 70%;
     background-color: rgba(255, 255, 255, 0.8);
   }
-  
+
   .card-body {
     padding: 0.8rem 0rem 0rem 3rem;
     width: 100%;
@@ -299,7 +299,7 @@ margin-right: 58px;
     background-color: rgb(251,251,251);
 	padding: 2rem 0rem 4rem 0rem;
 	  width: 100%;
-	  
+
 }
 #deck {
     margin: auto;
@@ -324,7 +324,7 @@ margin-right: 58px;
  border-bottom : 10px solid transparent;
  border-left : 13px solid rgb(238,69,66);
  }
- 
+
 button{
     border-radius: 3rem;
     width: 18%;
@@ -337,7 +337,7 @@ button{
     font-weight: bold;
 }
 .card{
-    margin: 0 auto; 
+    margin: 0 auto;
     margin-bottom: 4rem;
 }
 .card-img
@@ -350,7 +350,7 @@ button{
 }
 .article
 {
-    padding: 1.5rem;   
+    padding: 1.5rem;
  }
 
 .bor{
@@ -373,7 +373,7 @@ button{
 }
 .login {
     margin: 1rem 3rem;
-	
+
 }
 nav {
     justify-content: center;
@@ -416,12 +416,12 @@ nav {
         padding: 2rem;
         justify-content: space-around;
         transform: translateX(-100%);
-        transition: transform 1s;  
+        transition: transform 1s;
     }
     .menu li a{
         font-size: 2rem;
     }
-    
+
     .open .menu{
         transform: translateX(0);
     }
@@ -429,7 +429,7 @@ nav {
 }
 @media all and (min-width:520px) and (max-width:1030px){
     #bt2,#bt1{
-      
+
         padding: 1rem;
         width: 26%;
     }
@@ -439,12 +439,12 @@ nav {
     button{
 width: 34%;
     }
-    
-    
+
+
 }
 @media all and (min-width:520px) and (max-width:1030px){
     #bt2,#bt1{
-      
+
         padding: 1rem;
         width: 26%;
     }
@@ -454,38 +454,38 @@ width: 34%;
     button{
 width: 34%;
     }
-    
+
 
 }
 @media all and (max-width:1030px){
     #bt2,#bt1{
-      
+
         padding: 1rem;
         width: 20%;
     }
     button{
         width: 20%;
     }
-    
+
 }
 
 @media all and (max-width:1030px){
     #bt2,#bt1{
-      
+
         padding: 1rem;
         width: 30%;
     }
     button{
         width: 30%;
     }
-    
-    
+
+
 }
 @media all and (max-width:600px){
     #bt2,#bt1{
-      
+
         padding: 1rem;
-        width: 40%;  
+        width: 40%;
         margin-left: 9rem;
         margin-top: 2rem;
     }
@@ -497,13 +497,13 @@ width: 34%;
         font-size: 10vw;
         width: 80%;
           }
-    
+
 }
 @media only screen and (max-width: 390px) {
     .prev, .next,.text {font-size: 11px}
-  
+
     #bt2,#bt1{
-      
+
         margin-left: 6rem;
     }
 
@@ -511,21 +511,20 @@ width: 34%;
 
 
 @media only screen and (max-width: 709px) {
-  
+
     .container1 h1 {
         font-size: 5vw;
         margin-top: 4rem;
         margin-left: 5rem;
     }
-    
+
 
 }
 @media all and (max-width:800px){
     .card-body{
     padding: 1rem 0rem;
      }
- 
+
  }
 
 
- 

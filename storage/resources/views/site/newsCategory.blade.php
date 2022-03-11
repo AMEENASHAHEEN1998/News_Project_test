@@ -120,6 +120,8 @@
   }
   body{
       background-color:rgb(251,251,251);
+      direction: rtl;
+      text-align: right;
   }
   .card-body {
       padding: 1.5rem;
@@ -291,103 +293,34 @@
               <div class="SeeAllNews"> See all news </div>
           </div>
 
-      <div class="ipsume">
-                  <div><img src="{{ asset('site/newsCategory/img.jpg') }}" class="card-img-top" alt="..." style="width: 24rem;height:20rem;"></div>
-                  <div class="card-body1" style="width: 25rem">
-                      <h5 class="card-title">عنوان الخبر</h5>
-                      <p class="card-text">محتوى الخبر</p>
-                      <a href="#" class="a">رؤية المزيد <span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span></a>
-                  </div>
-              </div>
+          @foreach ($blog as $blog)
+          <div class="ipsume">
+            <div><img src="{{ asset('Attachments/'.$blog->image) }}" class="card-img-top" alt="..." style="width: 24rem;height:20rem;"></div>
+            <div class="card-body1" style="width: 25rem">
+                <h5 class="card-title"> {{ $blog->title }}</h5>
+                <p class="card-text"> {{ $blog->short_description }}</p>
+                <a href="{{ route('blog' , $blog->id) }}" class="a">رؤية المزيد <span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span></a>
+            </div>
+        </div>
+          @endforeach
+
 
 
           <div class="d-inline-flex">
 
-
+              @foreach ($blogs as $blog)
               <div class="card" style="width: 15rem;">
-                  <img src="{{ asset('site/newsCategory/img1.jpg') }}" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">عنوان الخبر</h5>
-                    <p class="card-text">محتوى الخبر</p>
-                      <a href="#" class="a">رؤية المزيد<span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span></a>
-                  </div>
-              </div>
+                <img src="{{ asset('Attachments/'.$blog->image) }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"> {{ $blog->title }}</h5>
+                  <p class="card-text"> {{ $blog->short_description }}</p>
+                    <a href="{{ route('blog' , $blog->id) }}" class="a"> رؤية المزيد <span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span></a>
+                </div>
+            </div>
+              @endforeach
 
-              <div class="card" style="width: 15rem;">
-                  <img src="{{ asset('site/newsCategory/img2.jpg') }}" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">عنوان الخبر</h5>
-                    <p class="card-text">محتوى الخبر</p>
-                      <a href="#" class="a"> رؤية المزيد <span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span></a>
-                  </div>
-              </div>
 
-              <div class="card" style="width: 15rem;">
-                  <img src="{{ asset('site/newsCategory/img3.jpg') }}" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">عنوان الخبر</h5>
-                    <p class="card-text">محتوى الخبر</p>
 
-                      <a href="#" class="a"> رؤية المزيد <span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span></a>
-                  </div>
-              </div>
-
-              <div class="card" style="width: 15rem;">
-                  <img src="{{ asset('site/newsCategory/img2.jpg') }}" class="card-img-top" alt="...">
-                  <div class="card-body">
-                     <h5 class="card-title">عنوان الخبر</h5>
-                      <p class="card-text">محتوى الخبر</p>
-
-                      <a href="#" class="a"> رؤية المزيد<span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span></a>
-                  </div>
-              </div>
-
-              <div class="card" style="width: 15rem;">
-                  <img src="{{ asset('site/newsCategory/img1.jpg') }}" class="card-img-top" alt="...">
-                  <div class="card-body">
-                     <h5 class="card-title">عنوان الخبر</h5>
-                      <p class="card-text">محتوى الخبر</p>
-
-                      <a href="#" class="a"> رؤية المزيد <span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span></a>
-                  </div>
-              </div>
-
-                      <div class="card" style="width: 15rem;">
-                  <img src="{{ asset('site/newsCategory/img2.jpg') }}" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">عنوان الخبر</h5>
-                    <p class="card-text">محتوى الخبر</p>
-
-                      <a href="#" class="a"> رؤية المزيد <span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span></a>
-                  </div>
-              </div>
-
-                          <div class="card" style="width: 15rem;">
-                  <img src="{{ asset('site/newsCategory/img3.jpg') }}" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">عنوان الخبر</h5>
-                      <p class="card-text">محتوى الخبر</p>
-                      <a href="#" class="a"> رؤية المزيد<span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span></a>
-                  </div>
-              </div>
-
-                                  <div class="card" style="width: 15rem;">
-                  <img src="{{ asset('site/newsCategory/img2.jpg') }}" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">عنوان الخبر</h5>
-                      <p class="card-text">محتوى الخبر</p>
-                      <a href="#" class="a"> رؤية المزيد<span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span></a>
-                  </div>
-              </div>
-
-                                  <div class="card" style="width: 15rem;">
-                  <img src="{{ asset('site/newsCategory/img4.jpg') }}" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">عنوان الخبر</h5>
-                      <p class="card-text">محتوى الخبر</p>
-                      <a href="#" class="a"> رؤية المزيد <span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span></a>
-                  </div>
-              </div>
 
 
                   <div class="Subscribe0">

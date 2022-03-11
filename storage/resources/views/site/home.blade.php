@@ -21,7 +21,7 @@
 
   <div class="bg-img">
 
-     <nav>
+    <nav>
       <div class="logo">
          <img src="{{ asset('site/home/images/img1.png') }}" alt="" id="img1">
       </div>
@@ -31,7 +31,7 @@
           <i class="fa fa-times fermer"></i>
       </div>
 
-      <ul class="menu">
+    <ul class="menu">
         <li><a href="/">الرئيسية</a></li>
         <li><a href="/aboutas">من نحن</a></li>
         <li><a href="/newsCategory">أخر الأخبار</a></li>
@@ -137,53 +137,24 @@
 </div>
 <div class="container" id="container">
 
-      <div class="card" style="max-width: 750px; border: none;">
-          <div class="row no-gutters">
+      @foreach ($blogs as $blog)
+        <div class="card" style="max-width: 750px; border: none;">
+            <div class="row no-gutters">
             <div class="col-md-4">
-              <img src="{{ asset('site/home/images/img7.png') }}" class="card-img" alt="">
+                <img src="{{ asset('Attachments/'.$blog->image) }}" class="card-img" alt="">
             </div>
             <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title"> عنوان المقال ..</h5>
-                 <p class="card-text"> محتوى تجريبي .</p>
-                <a href="#" class="a" style="color:#d84f45;font-weight: 700;">  رؤية المزيد <span><i class="fa fa-chevron-circle-right" aria-hidden="true" style="color:#d84f45;"></i></span></a>
+                <div class="card-body">
+                <h5 class="card-title"> {{ $blog->title }}</h5>
+                <p class="card-text"> {{ $blog->short_description}}</p>
+                <a href="{{ route('blog' , $blog->id) }}" class="a" style="color:#d84f45;font-weight: 700;">  رؤية المزيد <span><i class="fa fa-chevron-circle-right" aria-hidden="true" style="color:#d84f45;"></i></span></a>
 
-              </div>
+                </div>
             </div>
-          </div>
-      </div>
+            </div>
+        </div>
+      @endforeach
 
-      <div class="card" style="max-width: 750px;border: none;">
-          <div class="row no-gutters">
-            <div class="col-md-4">
-              <img src="{{ asset('site/home/images/img10.jpg') }}" class="card-img" alt="">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title"> عنوان المقال</h5>
-                 <p class="card-text"> محتوى تجريبي .</p>
-                <a href="#" class="a" style="color:#d84f45;font-weight: 700;"> رؤية المزيد <span><i class="fa fa-chevron-circle-right" aria-hidden="true" style="color:#d84f45;"></i></span></a>
-
-              </div>
-            </div>
-          </div>
-      </div>
-
-      <div class="card" style="max-width: 750px;border: none;">
-          <div class="row no-gutters">
-            <div class="col-md-4">
-              <img src="{{ asset('site/home/images/img9.jpg') }}" class="card-img" alt="">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">  عنوان المقال..</h5>
-                 <p class="card-text">محتوى تجريبي  .</p>
-                <a href="#" class="a" style="color:#d84f45;font-weight: 700;">رؤية المزيد <span><i class="fa fa-chevron-circle-right" aria-hidden="true" style="color:#d84f45;"></i></span></a>
-
-              </div>
-            </div>
-          </div>
-      </div>
 
 </div>
 </div>

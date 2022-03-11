@@ -2,7 +2,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ asset('site/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('site/blog/css/style.css') }}">
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
@@ -19,7 +19,7 @@
     <header>
         <nav>
             <div class="logo">
-                <a href="#"><img src="image/img1.png" alt="" style="width: 150px;"></a>
+                <a href="#"><img src="{{ asset('site/blog/image/img1.png') }}" alt="" style="width: 150px;"></a>
             </div>
             <div class="toggle">
                 <i class="fa fa-bars ouvrir"></i>
@@ -48,12 +48,11 @@
        <div class="text1">
 
         <h1>
-            عنوان المقال
+            {{ $blog->title }}
         </h1>
-        <p>Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin,
-            erat a elementum rutrum, neque sem
-        pretium metus, quis mollis nisl nunc et massa. </p>
-        <p>by</p> <p id="gras">Johny Delahoya</p> <p> Published on</p> <p id="gras2">May 4,2018</p>
+        <p>{{ $blog->short_description }}</p>
+        {{-- <p>by</p> <p id="gras">Johny Delahoya</p> <p> Published on</p> <p id="gras2">May 4,2018</p> --}}
+        <p> تاريخ النشر </p> <p id="gras2">{{ $blog->updated_at->format('Y,m,d') }}</p>
 
         </div>
 
@@ -64,7 +63,7 @@
             </p>
         </div>
 
-        <img src="{{ asset('site/blog/image/img2.png') }}" class="image" style=" display: block;margin-left: auto;margin-right: auto" width="750" height="350">
+        <img src="{{ asset('Attachments/'.$blog->image) }}" class="image" style=" display: block;margin-left: auto;margin-right: auto" width="750" height="350">
 
 
 
@@ -79,27 +78,7 @@
         </div>
 
         <div class="text2">
-            <p>
-            In hac habitasse platea dictumst.Vivamus adipiscing fermentum quam volutpat aliquam.Integer et elit eget elit
-            facilisis tristique.Nam vel iaculis mauris.Sed ullamcorper tellus</p>
-            <h1>Lorem ipsum dolor sir amet emundo de parle: </h1>
-
-            <ul>
-                <li>platea dictumst.Vivamus adipiscing fermentum quam volutpat aliquam.</li>
-                <li>Integer et elit eget facilisis tristique. Nam vel iaculis mauris</li>
-                <li>Sed ullamcorper tellus erat,non ultrices sem tincidunt euismod.</li>
-                <li>Fusce rhoncus porttitor velit. eu bibendum nibh aliquet vel. Fusce lorem leo.</li>
-            </ul>
-
-                <p>platea dictumst.Vivamus adipiscing fermentum quam volutpat aliquam.
-               Integer et elit eget elit facilisis tristique.Nam vel iaculis mauris.
-               Sed ullamcorper tellus erat.non ultrices sem</p>
-            </div>
-            <div class="member">
-                <p>Becom GTLA Member <button>join Now!</button> Learn More
-               <span><i class="fa fa-chevron-circle-right" aria-hidden="true" style="cursor: pointer;"></i></span>
-            </p>
-            </div>
+            {{ $blog->long_description }}
         </div>
 
     <div class="part3">
